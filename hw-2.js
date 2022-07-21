@@ -10,22 +10,15 @@
 
 // task 2
 
-   function age(i) {
-      const secondsInMinutes = 60;
-      const minutesInHours =  60;
-      const hoursInDays = 24;
-      const daysInYear = 365;
-      const ageInAllTimings = {
-         mySeconds: ((daysInYear * hoursInDays * minutesInHours * secondsInMinutes) * i) + ' seconds',
-         myMinutes: ((daysInYear * hoursInDays * minutesInHours ) * i) + ' minutes',
-         myHours: ((daysInYear * hoursInDays) * i) + ' hours',
-         myDays: (daysInYear  * i) + ' days',
-         myAge: i + ' years'
-      }
-      console.log(ageInAllTimings);
-   }
 
-   age(25);
+   const secondsInMinutes = 60;
+   const minutesInHours =  60;
+   const hoursInDays = 24;
+   const daysInYear = 365;
+   const myAge = 25;
+   
+   const myAgeInSeconds = secondsInMinutes * minutesInHours * hoursInDays * daysInYear * myAge;
+   console.log(myAgeInSeconds);
 
 // task 3
 
@@ -44,7 +37,7 @@
    let b = 2;
    let c = "белых медведей";
 
-   const sumBear = a + '' + b + ' ' + c;
+   const sumBear = a + b  + c;
    console.log(sumBear);
 
 // task 5
@@ -63,17 +56,16 @@
    const number = 42;
    const boolean = true;
    const string = 'Pavel';
-   console.log('number: ' + number + ' - ' + typeof(number));
-   console.log('boolean: ' + boolean + ' - ' + typeof(boolean));
-   console.log('string: ' + string + ' - ' + typeof(string));
+   console.log(`number : ${number} - ${typeof number}`);
+   console.log(`boolean: ${boolean} - ${typeof boolean}`);
+   console.log(`string: ${string} - ${typeof boolean}`);
 
 // task 7
 
-   let obj = {
-      myName: prompt('укажите ваше имя:'),
-      myAge: prompt('укажите ваш возраст:')
-   }
-   console.log(obj.myName + ',' + obj.myAge)
+   let yourName = prompt('укажите ваше имя:');
+   let yourAge = prompt('укажите ваш возраст:');
+   console.log(yourName, yourAge)
+   
 
 // advanced lvl
 
