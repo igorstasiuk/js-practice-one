@@ -90,7 +90,7 @@
    let codeWord3 = "огурцы";
    let codeWord4 = "липкие";
    let codeWord5 = "?!";
-
+   //  option 1
    const codeWords = [codeWord1, codeWord2, codeWord3, codeWord4, codeWord5];
    let cipher = '';
    for (let i = 0; i < codeWords.length; i++) {
@@ -98,3 +98,6 @@
       cipher += n[1];
    }
    console.log(cipher);
+
+   //  option 2 
+   let cipher2 = `${codeWord1[1]}${codeWord2[1]}${codeWord3[1]}${codeWord4[1]}${codeWord5[1]}`
