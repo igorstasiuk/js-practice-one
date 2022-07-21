@@ -37,7 +37,7 @@
    let b = 2;
    let c = "белых медведей";
 
-   const sumBear = a + b  + c;
+   const sumBear = a + '' + b + ' ' + c;
    console.log(sumBear);
 
 // task 5
