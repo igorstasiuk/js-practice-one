@@ -53,7 +53,7 @@
 
 // task 6
 
-   const number = 42;
+   let number = 42;
    const boolean = true;
    const string = 'Pavel';
    console.log(`number : ${number} - ${typeof number}`);
